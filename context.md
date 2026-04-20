@@ -76,9 +76,9 @@ Base public copy primarily on these extracted files:
 
 Use these visual assets:
 
-- [Logo](./public-assets/cybersummit-logo.png)
-- [Hero banner](./public-assets/cybersummit-hero-banner.png)
-- [Event poster](./public-assets/cybersummit-event-poster.png)
+- [Logo](./public-assets/cybersummit-logo.webp)
+- [Hero banner](./public-assets/cybersummit-hero-banner.webp)
+- [Event poster](./public-assets/cybersummit-event-poster.webp)
 
 ## Files That Should Stay Off the Public Site
 
@@ -231,4 +231,3 @@ Interpret creatively and make unexpected choices that feel genuinely designed fo
 **IMPORTANT**: Match implementation complexity to the aesthetic vision. Maximalist designs need elaborate code with extensive animations and effects. Minimalist or refined designs need restraint, precision, and careful attention to spacing, typography, and subtle details. Elegance comes from executing the vision well.
 
 Remember: Claude is capable of extraordinary creative work. Don't hold back, show what can truly be created when thinking outside the box and committing fully to a distinctive vision.
-
