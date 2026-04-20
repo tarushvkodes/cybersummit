@@ -8,9 +8,9 @@
 
 ## Public visual assets
 
-- `public-assets/cybersummit-logo.png`
-- `public-assets/cybersummit-hero-banner.png`
-- `public-assets/cybersummit-event-poster.png`
+- `public-assets/cybersummit-logo.webp`
+- `public-assets/cybersummit-hero-banner.webp`
+- `public-assets/cybersummit-event-poster.webp`
 
 ## Optional reference source docs
 
