@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Cyber Summit 2026 event slide for the Loudoun County student cybersecurity summit."
+    />
+    <title>Cyber Summit 2026 | Event Slide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #050505;
+        --fg: #f4f4f4;
+        --ink: #101010;
+        --cyan: #00fff0;
+        --cyan-soft: #75fff8;
+        --magenta: #ff3eb5;
+        --yellow: #ffe500;
+        --panel: #111111;
+        --muted: #c7c7d5;
+        --scale: 1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100vh;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+      }
+
+      .stage {
+        width: calc(1920px * var(--scale));
+        height: calc(1080px * var(--scale));
+      }
+
+      .slide {
+        position: relative;
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        border: 6px solid var(--fg);
+        background:
+          linear-gradient(90deg, rgba(0, 255, 240, 0.16), transparent 38%),
+          repeating-linear-gradient(
+            90deg,
+            transparent,
+            transparent 23px,
+            rgba(255, 62, 181, 0.22) 23px,
+            rgba(255, 62, 181, 0.22) 25px
+          ),
+          var(--ink);
+        box-shadow: 14px 14px 0 #000;
+        isolation: isolate;
+        transform: scale(var(--scale));
+        transform-origin: top left;
+      }
+
+      .slide::before {
+        content: "";
+        position: absolute;
+        inset: 132px 0 auto;
+        height: 390px;
+        z-index: -2;
+        border-top: 6px solid var(--fg);
+        border-bottom: 6px solid var(--fg);
+        background-image: url("cybersummit-hero-banner.webp");
+        background-position: center;
+        background-size: cover;
+        filter: saturate(1.22) contrast(1.08);
+      }
+
+      .slide::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background:
+          radial-gradient(circle at 50% 310px, transparent 0 220px, rgba(0, 0, 0, 0.18) 310px),
+          linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.88) 58%),
+          repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.06) 0 1px, transparent 1px 7px);
+        pointer-events: none;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 132px;
+        padding: 24px 36px;
+        border-bottom: 6px solid var(--fg);
+        background: rgba(8, 8, 8, 0.92);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+      }
+
+      .brand img {
+        width: 82px;
+        height: 82px;
+        object-fit: cover;
+        border: 4px solid var(--fg);
+        background: #000;
+      }
+
+      .kicker {
+        margin: 0 0 4px;
+        color: var(--cyan);
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: "Archivo Black", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        line-height: 1.05;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-size: 60px;
+        letter-spacing: 0.035em;
+      }
+
+      .top-meta {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .meta-chip {
+        padding: 13px 18px;
+        border: 4px solid var(--fg);
+        background: #000;
+        color: var(--fg);
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+
+      .meta-chip.hot {
+        background: var(--cyan);
+        color: #000;
+      }
+
+      .mission-panel {
+        position: absolute;
+        left: 36px;
+        right: 36px;
+        top: 540px;
+        display: grid;
+        grid-template-columns: 1.45fr 0.78fr;
+        gap: 30px;
+        height: 310px;
+      }
+
+      .statement,
+      .details {
+        border: 5px solid var(--fg);
+        background: rgba(17, 17, 17, 0.95);
+      }
+
+      .statement {
+        position: relative;
+        height: 310px;
+        padding: 28px 42px 26px;
+        box-shadow: 12px 12px 0 var(--magenta);
+      }
+
+      .stamp {
+        display: inline-block;
+        margin-bottom: 20px;
+        padding: 12px 16px;
+        border: 4px solid #000;
+        background: var(--cyan);
+        color: #000;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .statement h2 {
+        max-width: 1150px;
+        font-size: 49px;
+        letter-spacing: 0.035em;
+      }
+
+      .statement p {
+        margin-top: 16px;
+        color: var(--muted);
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+
+      .details {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        height: 310px;
+        padding: 30px;
+        box-shadow: 12px 12px 0 var(--cyan);
+      }
+
+      .date {
+        color: var(--fg);
+        font-size: 45px;
+        letter-spacing: 0.04em;
+      }
+
+      .place {
+        align-self: center;
+        padding-left: 22px;
+        border-left: 8px solid var(--magenta);
+        color: var(--fg);
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.42;
+        text-transform: uppercase;
+      }
+
+      .site-link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        padding-top: 18px;
+        border-top: 4px solid rgba(255, 255, 255, 0.42);
+      }
+
+      .site-link strong {
+        color: var(--cyan);
+        font-family: "Archivo Black", Impact, sans-serif;
+        font-size: 30px;
+        font-weight: 400;
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+      }
+
+      .site-link span {
+        padding: 10px 14px;
+        border: 4px solid #000;
+        background: var(--yellow);
+        color: #000;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      .workshops {
+        position: absolute;
+        left: 36px;
+        right: 36px;
+        bottom: 36px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+        height: 150px;
+      }
+
+      .workshop {
+        height: 150px;
+        padding: 21px 22px 18px;
+        border: 4px solid var(--fg);
+        background: rgba(0, 0, 0, 0.82);
+      }
+
+      .workshop:nth-child(2) {
+        border-color: var(--cyan);
+      }
+
+      .workshop:nth-child(3) {
+        border-color: var(--magenta);
+      }
+
+      .workshop:nth-child(4) {
+        border-color: var(--yellow);
+      }
+
+      .workshop h3 {
+        margin-bottom: 10px;
+        color: var(--fg);
+        font-size: 22px;
+        letter-spacing: 0.03em;
+      }
+
+      .workshop p {
+        color: var(--muted);
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.42;
+      }
+
+      .corner-note {
+        position: absolute;
+        right: 48px;
+        top: 532px;
+        color: rgba(255, 255, 255, 0.2);
+        font-family: "Archivo Black", Impact, sans-serif;
+        font-size: 118px;
+        letter-spacing: 0.04em;
+        line-height: 1;
+        text-transform: uppercase;
+        pointer-events: none;
+      }
+
+      @media print {
+        html,
+        body {
+          margin: 0;
+          padding: 0;
+          background: #fff;
+        }
+
+        .slide {
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="stage">
+      <main class="slide" aria-label="Cyber Summit 2026 event slide">
+        <header class="topbar">
+          <div class="brand">
+            <img src="cybersummit-logo.webp" alt="Cyber Summit logo" />
+            <div>
+              <p class="kicker">Loudoun County - Student Cybersecurity Event</p>
+              <h1>Cyber Summit 2026</h1>
+            </div>
+          </div>
+          <div class="top-meta" aria-label="Event quick facts">
+            <span class="meta-chip hot">May 30</span>
+            <span class="meta-chip">9 AM - 4 PM</span>
+            <span class="meta-chip">Briar Woods HS</span>
+          </div>
+        </header>
+
+        <div class="corner-note" aria-hidden="true">2026</div>
+
+        <section class="mission-panel">
+          <div class="statement">
+            <span class="stamp">Mission Active</span>
+            <h2>A one-day cyber summit for the next generation of defenders.</h2>
+            <p>
+              Hands-on cybersecurity, AI security, ethical hacking, hardware, and IoT labs for high school students.
+            </p>
+          </div>
+
+          <aside class="details" aria-label="Event logistics">
+            <h2 class="date">Saturday, May 30, 2026</h2>
+            <p class="place">
+              Briar Woods High School<br />
+              22525 Belmont Ridge Rd<br />
+              Ashburn, VA 20148
+            </p>
+            <div class="site-link">
+              <strong>cybersummit.cc</strong>
+              <span>Register now</span>
+            </div>
+          </aside>
+        </section>
+
+        <section class="workshops" aria-label="Workshop highlights">
+          <article class="workshop">
+            <h3>Cyber Escape Room</h3>
+            <p>Password cracking, log analysis, cryptography, and forensics.</p>
+          </article>
+          <article class="workshop">
+            <h3>AI Capture The Flag</h3>
+            <p>Prompt injection, adversarial AI, model attacks, and defense.</p>
+          </article>
+          <article class="workshop">
+            <h3>AI Hardware Lab</h3>
+            <p>Emotion recognition AI connected to Arduino-style hardware.</p>
+          </article>
+          <article class="workshop">
+            <h3>IoT Pentesting Lab</h3>
+            <p>Smart devices, beginner vulnerabilities, and secure systems.</p>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      const fitSlide = () => {
+        const scale = Math.min((window.innerWidth - 48) / 1920, (window.innerHeight - 48) / 1080, 1);
+        document.documentElement.style.setProperty("--scale", Math.max(scale, 0.2).toFixed(4));
+      };
+
+      fitSlide();
+      window.addEventListener("resize", fitSlide);
+    </script>
+  </body>
+</html>
