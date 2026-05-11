@@ -2,7 +2,7 @@
 
 ## Sponsor Packet Summary
 
-Cyber Summit 2026 is a new cybersecurity conference for high school students across Loudoun County. The inaugural event takes place on **Saturday, May 30, 2026** at **Briar Woods High School**.
+Cyber Summit 2026 is a new cybersecurity conference for LCPS students in grades 9-12. The inaugural event takes place on **Saturday, May 30, 2026** at **Briar Woods High School**.
 
 The event is designed to empower students through hands-on, real-world cybersecurity experiences led by industry professionals, educators, and student leaders.
 

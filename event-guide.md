@@ -2,7 +2,7 @@
 
 ## Overview
 
-Cyber Summit 2026 is a hands-on cybersecurity conference designed for high school students across Loudoun County who are interested in technology, cybersecurity, artificial intelligence, and ethical hacking.
+Cyber Summit 2026 is a hands-on cybersecurity conference designed for LCPS students in grades 9-12 who are interested in technology, cybersecurity, artificial intelligence, and ethical hacking.
 
 The event brings together students, mentors, and industry professionals for a full day of interactive workshops, technical challenges, and collaborative learning.
 
@@ -18,7 +18,7 @@ The goal is to inspire the next generation of cybersecurity professionals by giv
 
 ## Who Should Attend
 
-- High school students interested in cybersecurity, AI, and technology
+- LCPS students in grades 9-12 interested in cybersecurity, AI, and technology
 - Beginners exploring cybersecurity for the first time
 - Students involved in CyberPatriot, coding clubs, or tech programs
 - Anyone curious about ethical hacking and digital defense
